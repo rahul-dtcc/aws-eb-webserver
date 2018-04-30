@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "mybucket" {
-  bucket = "dtcc-env-jogula"
+  bucket = "dtcc-env-${uuid()}"
 }
 
 resource "aws_s3_bucket_object" "myobject" {
